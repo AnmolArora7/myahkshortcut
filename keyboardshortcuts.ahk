@@ -9,25 +9,26 @@
 }
 
 ^!e:: { ; Open eBooks Folder
-    Run("D:\Important\E-Books")
+    Run("D:\eBooks")
 }
 
 
 
 
 ; ========== Opening Software ==========
-^!v:: { ; Open VS Code
-    Run("C:\Program Files\Microsoft VS Code\Code.exe")
-}
 
 ^!g:: { ; Ctrl + Alt + G to launch GTA IV
     Run("D:\Games\Grand Theft Auto IV - The Complete Edition\GTAIV.exe")
 }
 
-
-^!f:: { ; Open Firefox
-    Run("C:\Program Files\Mozilla Firefox\firefox.exe")
+^!4:: { ; Ctrl + Alt + 4 to open Notion
+    Run("C:\Users\" . A_UserName . "\AppData\Local\Programs\Notion\Notion.exe")
 }
+
+^!y:: { ; Ctrl + Alt + Y to open YouTube Music
+    Run("C:\Users\Anmol Arora\AppData\Local\Programs\youtube-music\YouTube Music.exe")
+}
+
 
 ^!T:: { ; Ctrl + Alt + T to open Telegram
     Run("C:\Users\" A_UserName "\AppData\Roaming\Telegram Desktop\Telegram.exe")
@@ -43,13 +44,9 @@
     Run("shell:AppsFolder\38833FF26BA1D.UnigramPreview_g9c9v27vpyspw!App")
 }
 
-
-
-
-^!P:: { ; Ctrl + Alt + P to open PC Manager
-    Run("shell:AppsFolder\Microsoft.PCManager_8wekyb3d8bbwe!App")
+^!f:: { ; Ctrl + Alt + F to open FxSound
+    Run("C:\Program Files\FxSound LLC\FxSound\FxSound.exe")
 }
-
 
 ^!l:: { ; Ctrl + Alt + L to open LibreWolf
     Run("C:\Program Files\LibreWolf\librewolf.exe")
@@ -87,3 +84,11 @@
 
 ; ========== Misc Shortcuts ==========
 
+^CapsLock:: { ; Ctrl + CapsLock to close active window
+    WinClose("A")
+}
+^!0:: {  ; Ctrl + Alt + 0
+    Run("shutdown /s /t 0", , "Hide")
+}
+
+; ========== Typing Assist ==========
